@@ -11,7 +11,7 @@ let crys3 = 0;
 
 let crys4 = 0;
 
-let total = 0;
+// let total = 0;
 
 let score = 0;
 
@@ -20,8 +20,10 @@ function startLogic() {
     //create a total value between 19 and 120 using Math.random.
         let min = 19; 
         let max = 120  
-        total = Math.floor(Math.random() * (+max - +min)) + +min; 
-        console.log(total); 
+        let total = Math.floor(Math.random() * (+max - +min)) + +min; console.log(total); 
+        // Outputs total to the screen.
+        $("#total").html(total);
+        //Create separate values for 4 crystals.
         let crysMin = 1;
         let crysMax = 12;
         crys1 = Math.floor(Math.random() * (+crysMax - +crysMin)) + +crysMin;
