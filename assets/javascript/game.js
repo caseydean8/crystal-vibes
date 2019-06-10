@@ -22,7 +22,7 @@ function startLogic() {
         let max = 120  
         total = Math.floor(Math.random() * (+max - +min)) + +min; 
         console.log(total); 
-        let crysMin = 0;
+        let crysMin = 1;
         let crysMax = 12;
         crys1 = Math.floor(Math.random() * (+crysMax - +crysMin)) + +crysMin;
         console.log(crys1);
@@ -32,7 +32,6 @@ function startLogic() {
         console.log(crys3);
         crys4 = Math.floor(Math.random() * (+crysMax - +crysMin)) + +crysMin;
         console.log(crys4);
-
 }
 
 
