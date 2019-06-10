@@ -36,4 +36,19 @@ function startLogic() {
         console.log(crys4);
 }
 
+// Utilize click events to add crystal values to player score.
+$("#crystal-1").click(function (){
+    $("#score").html(score += crys1);
+})
 
+$("#crystal-2").click(function (){
+    $("#score").html(score += crys2);
+})
+
+$("#crystal-3").click(function (){
+    $("#score").html(score += crys3);
+})
+
+$("#crystal-4").click(function (){
+    $("#score").html(score += crys4);
+})
