@@ -39,6 +39,7 @@ function startLogic() {
     // Utilize click events to add crystal values to player score.
     $("#crystal-1").off().on("click", function (){
     $("#score-html").html(score += crys1);
+    $("#heading").css("color", "yellow");
     console.log(score, total);
     if (score >= total){
         console.log(score, total , " under if statement btn 1")
@@ -48,6 +49,7 @@ function startLogic() {
 
     $("#crystal-2").off().on("click", function (){
     $("#score-html").html(score += crys2);
+    $("#heading").css("color", "blue");
     if (score >= total){
         console.log(score, total , " under if statement btn 2")
         scoring();
@@ -55,6 +57,7 @@ function startLogic() {
 })
 
     $("#crystal-3").off().on("click", function (){
+    $("#heading").css("color", "green");
     $("#score-html").html(score += crys3);
     if (score >= total){
         console.log(score, total , " under if statement btn 3")
@@ -63,6 +66,7 @@ function startLogic() {
 })
 
     $("#crystal-4").off().on("click", function (){
+    $("#heading").css("color", "purple");
     $("#score-html").html(score += crys4);
     if (score >= total){
         console.log(score, total , " under if statement btn 4")

@@ -1,6 +1,19 @@
-main {
+.container::before {
     background: url("../images/hippies.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #cccccc;
+    content: "";
+    /* display: block; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.5;
+}   
+
+#heading {
+    padding: 2%;
+    text-align: center;
 }
