@@ -83,7 +83,7 @@ function scoring(){
         console.log(score);
         wins++;
         $("#wins").html("Wins " + wins);
-        score =0;
+        score = 0;
         reset();
     }
     else if (score > total) {
