@@ -10,7 +10,7 @@ var singletonDesign = false
 
 // Create a reset function that logs wins and losses 
 function reset() {
-    // score = 0;
+    score = 0;
     $("#score").html(score); 
     startLogic();
 }
@@ -83,14 +83,16 @@ function scoring(){
         console.log(score);
         wins++;
         $("#wins").html("Wins " + wins);
-        score = 0;
+        $("#score-html").text(0);
+        // score = 0;
         reset();
     }
     else if (score > total) {
         // singletonDesign = true
         losses++;
         $("#losses").html("Losses " + losses);
-        score = 0;
+        $("#score-html").text(0);
+        // score = 0;
         reset();
     }
 }
