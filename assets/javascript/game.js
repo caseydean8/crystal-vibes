@@ -18,7 +18,7 @@ function startLogic() {
     let min = 19; 
     let max = 120  
     let total = Math.floor(Math.random() * (+max - +min)) + +min; 
-    
+    console.log(total);
     // Outputs total to the screen.
     $("#total-html").html(total);
 
@@ -37,6 +37,7 @@ function startLogic() {
     // Utilize click events to add crystal values to player score.
     $("#crystal-1").off().on("click", function (){
     $("#score-html").html(score += crys1);
+    $("#top").text("Sweet!");
     $("#heading").css("color", "yellow");
     if (score >= total){
         scoring();
@@ -45,6 +46,7 @@ function startLogic() {
 
     $("#crystal-2").off().on("click", function (){
     $("#score-html").html(score += crys2);
+    $("#top").text("righteous man!");
     $("#heading").css("color", "blue");
     if (score >= total){
         scoring();
@@ -52,16 +54,18 @@ function startLogic() {
     })
 
     $("#crystal-3").off().on("click", function (){
-    $("#heading").css("color", "green");
     $("#score-html").html(score += crys3);
+    $("#top").text("gnarly dude!");
+    $("#heading").css("color", "green");
     if (score >= total){
         scoring();
         }
     })
 
     $("#crystal-4").off().on("click", function (){
-    $("#heading").css("color", "purple");
     $("#score-html").html(score += crys4);
+    $("#top").text("Whoa!");
+    $("#heading").css("color", "purple");
     if (score >= total){
         scoring();
         }
@@ -73,6 +77,8 @@ function startLogic() {
         wins++
         $("#wins").html("Wins " + wins);
         $("#score-html").text(0);
+        $("#top").text("Totally nailed it!");
+        $("#heading").css("color", "black");
         reset();
         }
 
@@ -80,6 +86,8 @@ function startLogic() {
         losses++;
         $("#losses").html("Losses " + losses);
         $("#score-html").text(0);
+        $("#top").text("bummer dude your not like smart");
+        $("#heading").css("color", "black");
         reset();
         }
     }
