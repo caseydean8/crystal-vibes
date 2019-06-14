@@ -14,9 +14,13 @@
 }   
 
 #heading {
-    padding: 2%;
+    padding: 1%;
     text-align: center;
 }
 #sweet-text {
+    text-align: center;
+}
+
+.row{
     text-align: center;
 }
