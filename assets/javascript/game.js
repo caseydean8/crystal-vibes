@@ -75,16 +75,16 @@ function startLogic() {
     function scoring(){
     if (score === total) {
         wins++
-        $("#wins").html("Wins " + wins);
+        $("#wins").html("wins " + wins);
         $("#score-html").text(0);
-        $("#top").text("Totally nailed it!");
+        $("#top").text("Totally Nailed It!");
         $("#heading").css("color", "black");
         reset();
         }
 
     else if (score > total) {
         losses++;
-        $("#losses").html("Losses " + losses);
+        $("#losses").html("losses " + losses);
         $("#score-html").text(0);
         $("#top").text("bummer dude your not like smart");
         $("#heading").css("color", "black");
