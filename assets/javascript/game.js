@@ -67,7 +67,7 @@ function startLogic() {
         }
     })
 
-    // Win/loss function that directs game to reset.
+    // Win/loss counting function that directs game to reset.
     function scoring(){
     if (score === total) {
         wins++

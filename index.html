@@ -10,33 +10,43 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    
+
 
 <body onload="startLogic()">
     <main role="main">
         <div class="container">
-            <div id="heading"><h1>Spread Some Good Vibes Bro!</h1></div>
-            <p>You will be given a random number at the start of the game.</p>
-            <p>There are four crystals below.</p>
-            <p>Clicking on a crystal you will add a specific amount of points to your total score. </p>
-            <p>You win the game by matching the total score to the random number.</p>
-            <p>The value of each crystal is hidden until you click on it.</p>
-            Each time the game starts the value of the crystals will change.
+            <div id="heading">
+                <h1>Spread Some Good Vibes Bro!</h1>
+            </div>
             <div class="row">
                 <div class="col-md-4">
+                    <p>Hey man theres like a totally random number down there</p>
+                    <p>Click on one of those sweet crystals and like points freakin come out of nowhere!</p>
+                    <p>Dude I'll freakin give you cash if you can match the number. its super hard and maths not really my thing, you know? </p>
+                    <p>I'm just kidding man, I'm broke right now. You holden?</p>
+                </div>
+            </div>
+            <!-- <p>The value of each crystal is hidden until you click on it.</p>
+            Each time the game starts the value of the crystals will change. -->
+            <div class="row">
+                <div class="col-md-2">
                     <h1 id="total-html">0</h1>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-2">
                     <h5 id="wins">Wins 0</h5>
                     <h5 id="losses">Losses 0</h5>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <button type="button" class="btn btn-outline-*" id="crystal-1" ><img src="assets/images/yellowCrystal.jpeg" width="55" /></button>
-                    <button type="button" class="btn btn-outline-*" id="crystal-2"><img src="assets/images/blueCrystal.jpeg" width="55" /></button>
-                    <button type="button" class="btn btn-outline-*" id="crystal-3"><img src="assets/images/greenCrystal.jpeg" width="55" /></button>
-                    <button type="button" class="btn btn-outline-*" id="crystal-4"><img src="assets/images/purpleCrystal.jpeg" width="55" /></button>
+                    <button type="button" class="btn btn-outline-*" id="crystal-1"><img
+                            src="assets/images/yellowCrystal.jpeg" width="55" /></button>
+                    <button type="button" class="btn btn-outline-*" id="crystal-2"><img
+                            src="assets/images/blueCrystal.jpeg" width="55" /></button>
+                    <button type="button" class="btn btn-outline-*" id="crystal-3"><img
+                            src="assets/images/greenCrystal.jpeg" width="55" /></button>
+                    <button type="button" class="btn btn-outline-*" id="crystal-4"><img
+                            src="assets/images/purpleCrystal.jpeg" width="55" /></button>
                 </div>
             </div>
             <div class="row">
@@ -50,10 +60,10 @@
                 </div>
             </div>
             <div class="row">
-                    <div class="col-md-4">
-                        <h1 id="comment"></h1>
-                    </div>
+                <div class="col-md-4">
+                    <h1 id="comment"></h1>
                 </div>
+            </div>
         </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
