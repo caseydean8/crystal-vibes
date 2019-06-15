@@ -21,6 +21,6 @@
     text-align: left;
 }
 
-.row{
-    text-align: center;
+.col-md-2 {
+    width: 50%;
 }
